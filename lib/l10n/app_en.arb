@@ -1,0 +1,13 @@
+{
+  "@@locale": "en",
+  "appTitle": "Skylines",
+  "@appTitle": {
+    "description": "The title of the application"
+  },
+  "startGame": "Start Game",
+  "@startGame": {
+    "placeholders": {}
+  },
+  "exit": "Exit",
+  "@exit": {}
+}

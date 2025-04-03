@@ -1,0 +1,11 @@
+{
+  "@@locale": "zh",
+  "appTitle": "Skylines",
+  "@appTitle": {
+    "description": "The title of the application"
+  },
+  "startGame": "開始遊戲",
+  "@startGame": {},
+  "exit": "Exit",
+  "@exit": {}
+}

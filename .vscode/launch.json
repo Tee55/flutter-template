@@ -1,0 +1,25 @@
+{
+    // For more information about build modes, visit: https://docs.flutter.dev/testing/build-modes
+    "version": "0.2.0",
+    "configurations": [
+
+        {
+            "name": "skylines (debug mode)",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "debug"
+        },
+        {
+            "name": "skylines (profile mode)",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "profile"
+        },
+        {
+            "name": "skylines (release mode)",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "release"
+        }
+    ]
+}

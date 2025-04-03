@@ -1,0 +1,73 @@
+{
+  "conversationId": "paris_level_1",
+  "location": "paris",
+  "availableLanguages": ["en", "zh"],
+  "defaultLanguage": "en",
+  "scenarios": [
+    {
+      "scenarioId": "cafe_ordering",
+      "background": "assets/images/paris_cafe.jpg",
+      "dialogues": [
+        {
+          "id": "dialogue_1",
+          "speaker": "waiter",
+          "speakerAvatar": "assets/avatars/waiter.png",
+          "translations": {
+            "en": {
+              "text": "Good morning! What would you like to order?",
+              "audio": "assets/audio/en/dialogue_1.mp3"
+            },
+            "fr": {
+              "text": "Bonjour! Qu'est-ce que vous voulez commander?",
+              "audio": "assets/audio/fr/dialogue_1.mp3"
+            },
+            "es": {
+              "text": "¡Buenos días! ¿Qué le gustaría ordenar?",
+              "audio": "assets/audio/es/dialogue_1.mp3"
+            }
+          }
+        },
+        {
+          "id": "dialogue_2",
+          "speaker": "user",
+          "choices": {
+            "en": [
+              {
+                "id": "choice_1_en",
+                "text": "I would like a coffee, please.",
+                "correctness": true,
+                "points": 10,
+                "nextDialogueId": "dialogue_3"
+              },
+              {
+                "id": "choice_2_en",
+                "text": "Give me coffee now!",
+                "correctness": false,
+                "points": 0,
+                "feedback": "This is impolite. Try a more courteous phrase.",
+                "nextDialogueId": "dialogue_4"
+              }
+            ],
+            "fr": [
+              {
+                "id": "choice_1_fr",
+                "text": "Je voudrais un café, s'il vous plaît.",
+                "correctness": true,
+                "points": 10,
+                "nextDialogueId": "dialogue_3"
+              },
+              {
+                "id": "choice_2_fr",
+                "text": "Donnez-moi un café maintenant!",
+                "correctness": false,
+                "points": 0,
+                "feedback": "C'est impoli. Essayez une phrase plus courtoise.",
+                "nextDialogueId": "dialogue_4"
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

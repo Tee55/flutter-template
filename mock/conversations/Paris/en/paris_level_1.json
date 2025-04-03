@@ -1,0 +1,43 @@
+{
+  "conversationId": "paris_level_1",
+  "location": "paris",
+  "availableLanguages": ["en", "zh"],
+  "defaultLanguage": "en",
+  "scenarios": [
+    {
+      "scenarioId": "cafe_ordering",
+      "background": "assets/images/paris_cafe.jpg",
+      "dialogues": [
+        {
+          "id": "dialogue_1",
+          "speaker": "waiter",
+          "translations": {
+            "text": "Good morning! What would you like to order?",
+            "audio": "assets/audio/en/dialogue_1.mp3"
+          }
+        },
+        {
+          "id": "dialogue_2",
+          "speaker": "user",
+          "choices": [
+            {
+              "id": "choice_1",
+              "text": "I would like a coffee, please.",
+              "correctness": true,
+              "points": 10,
+              "nextDialogueId": "dialogue_3"
+            },
+            {
+              "id": "choice_2",
+              "text": "Give me coffee now!",
+              "correctness": false,
+              "points": 0,
+              "feedback": "This is impolite. Try a more courteous phrase.",
+              "nextDialogueId": "dialogue_4"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
