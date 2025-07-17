@@ -25,13 +25,13 @@ The flutterfire should create firebase_options.dart.
 # Create Android
 
 ```
-flutter create --platforms android
+flutter create --platforms android .
 ```
 
 # Create IOS
 
 ```
-flutter create --platforms ios
+flutter create --platforms ios .
 ```
 
 # Folder structure
